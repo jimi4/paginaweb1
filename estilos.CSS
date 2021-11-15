@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("fondo.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor >div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer{
+    background: rgb(230, 204, 204);
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.contenedor .header{
+    background: #89a1d6;
+    color: rgb(21, 17, 236);
+    grid-column-start: 1;
+    grid-column-end: -1;
+    
+}
+
+img {
+    width: 100px; 
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+li{
+    float: left;
+    list-style: none;
+    padding: 20px;
+}
+nav {
+    float: right;
+    margin-top: 60px;
+    margin-right: 150px;
+}
+a {
+    text-decoration: none;
+    font-family: fantasy;
+    color: darkblue;
+}
+li:hover a {
+    color: rgb(212, 235, 13);
+}
+
+.contenedor .contenido{
+    grid-column: span 2;
+    
+}
+
+.contenedor .footer{
+    background: #12203e;
+    color: #fff;
+    grid-column: span 4;
+}
